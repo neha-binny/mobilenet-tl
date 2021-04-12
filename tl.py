@@ -11,6 +11,8 @@ def load_model():
   return model
 
 st.title("Image Classifier - 1000 Categories!")
+
+
 upload = st.sidebar.file_uploader(label='Upload the Image')
 if upload is not None:
   file_bytes = np.asarray(bytearray(upload.read()), dtype=np.uint8)
